@@ -1,0 +1,59 @@
+<html>   
+
+<head>   
+  <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+    }
+    body{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background: linear-gradient(135deg, #2c6c96, #a23636);
+    }</style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>   
+
+<script>   
+
+$(document).ready(function(){   
+
+    $("#show").hide();
+    $("#hide").click(function(){   
+
+        $("p").hide(2000);
+        $("#hide").hide();
+        $("#show").show();
+          
+
+    });   
+    $("#show").click(function(){   
+
+$("p").show(2000);
+$("#show").hide();
+$("#hide").show();   
+
+});   
+
+});   
+
+</script>   
+
+</head>   
+  
+<body> 
+    <center> 
+
+<p style="color:navy;font-size: 35px;"> This Is An Example Of Hiding And Showing Paragraphs Using <br><b>"Hide"</b> & <b>"Show"</b> Buttons Using JQuery And HTML. </p>   
+
+<button id="show" style="height:50px;width=50px;font-size: 28px;" > Show </button>
+<button id="hide" style="height:50px;width=50px;font-size: 28px;"> Hide </button>   
+</center>
+</body>   
+
+</html> 
